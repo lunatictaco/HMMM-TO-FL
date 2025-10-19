@@ -1,0 +1,41 @@
+BONDS
+SCSE SCSE 222.500     1.5300 ! CTL2-CTL2 bond parameter.
+
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5 
+                !adm jr., 5/08/91, suggested cutoff scheme
+!
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
+!
+!atom  ignored    epsilon      Rmin/2   ignored   eps,1-4       Rmin/2,1-4
+!
+
+SCSM      0.0       -0.350     2.080
+SCSE      0.0       -0.2184     2.080
+
+NBFIX
+SCSM SCSM -0.625 3.15
+!SCSE SCSE -0.274 3.15
+SCSE SCSE -0.344 3.511
+
+CRL1 CRL1 -0.0324 4.02
+CRL1 CRL2 -0.0418 4.03
+CRL1 HGA1 -0.0362 3.35
+CRL1 HGA2 -0.0319 3.35
+CRL2 CRL2 -0.0540 4.04
+CRL2 HGA1 -0.0468 3.36
+CRL2 HGA2 -0.0412 3.36
+HGA1 HGA1 -0.0405 2.68
+HGA1 HGA2 -0.0357 2.68
+HGA2 HGA2 -0.0315 2.68
+
+
+
+
+
+
+END

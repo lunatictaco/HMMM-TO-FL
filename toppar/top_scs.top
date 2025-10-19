@@ -1,0 +1,15 @@
+MASS 1    SCSM 14.027000 SC ! "Simple Carbon Solvent Methane"
+MASS 2    SCSE 14.027000 SC ! "Simple Carbon Solvent Ethane"
+
+DEFA FIRS none LAST none
+AUTOGENERATE ANGLES DIHEDRALS
+
+RESI SCSM          0.00
+ATOM C   SCSM     0.00
+
+RESI SCSE !Simple Carbon Solvent ethane
+ATOM C1   SCSE    0.00
+ATOM C2   SCSE    0.00
+BOND C1 C2
+
+END
