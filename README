@@ -1,6 +1,7 @@
 # This script is based on an old script from Hale (Emad's group). There are some modifications that allow for better minimization of ring piercings and weird bonds.
 # In order to convert HMMM lipids to their full-length forms, run the following script by
 # -> sh ./hmmm-to-fl-script.sh
+# You will have to include the LongBondEliminator folder (https://pmc.ncbi.nlm.nih.gov/articles/PMC9856086/) inside of this current one (thank you for this wonderful tool!).
 # The script will call the corresponding tcl scripts located in this directory. 
 # Be sure not to move these files without changing their paths.
 # The toppar contains the charmm parameter and topology files, which are obtained from CHARMM-GUI
